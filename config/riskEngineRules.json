@@ -25,7 +25,7 @@
         },
         {
           "opearator": "eq",
-          "compareWith": 1,
+          "value": 1,
           "ratingModifier": 2
         }
       ]
