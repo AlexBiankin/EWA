@@ -17,7 +17,7 @@ export async function init(): Promise<Application> {
     controllers: [RiskController],
     routePrefix: BASE_PATH,
   });
-  
+
   app.set("port", DEFAULT_PORT);
   app.on("app-error", (error: Error) => logger.error(error));
 

@@ -1,0 +1,51 @@
+{
+  "terminated": {
+    "eq": {
+      "value": true,
+      "ratingModifier": 5
+    }},
+    "employment_in_months": {
+      "lt": {
+        "value": 3,
+        "ratingModifier": 2
+      }
+    },
+    "number_of_ewa_taken_in_period": {
+      "gt": {
+        "value": 0,
+        "ratingModifier": 1
+      }
+    },
+    "number_of_ewa_taken_overall": {
+      "or": [
+         {
+          "opearator": "eq",
+          "value": 0,
+          "ratingModifier": 3
+        },
+        {
+          "opearator": "eq",
+          "compareWith": 1,
+          "ratingModifier": 2
+        }
+      ]
+    },
+    "incomePerHour": {
+      "gt": {
+        "value": 100,
+        "ratingModifier": 1
+      }
+    },
+    "marital_status": {
+      "neq": {
+        "value": "married",
+        "ratingModifier": 2
+      }
+    },
+    "age": {
+      "lt": {
+        "value": 23,
+        "ratingModifier": 1
+      }
+    }
+  }

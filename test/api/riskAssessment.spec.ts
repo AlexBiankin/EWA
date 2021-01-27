@@ -15,7 +15,6 @@ const validRiskCheckInput = {
 };
 
 describe("should verify risk assesment", () => {
-
   it("should give correct eligable_percentage for validRiskCheckInput", async () => {
     const result = await axiosInstance.post(
       "/riskassesment",

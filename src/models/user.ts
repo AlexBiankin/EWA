@@ -1,6 +1,7 @@
-import { IsInt, Length, IsBoolean, Min, Max } from "class-validator";
+import { IsInt, Length, IsBoolean, IsOptional } from "class-validator";
 
 export class UserProfile {
+  [key: string]: any; // setting index type, won't affect validation
   @IsInt()
   age: number;
 
@@ -18,6 +19,10 @@ export class UserProfile {
 
   @IsBoolean()
   terminated: boolean;
+
+  @IsInt()
+  @IsOptional()
+  incomePerHour?: number;
 }
 
 export class UserRiskAssessment {
