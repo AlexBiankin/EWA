@@ -21,8 +21,6 @@ export class UserProfile {
 }
 
 export class UserRiskAssessment {
-  @Min(0)
-  @Max(100)
   eligable_percentage: number;
 }
 
